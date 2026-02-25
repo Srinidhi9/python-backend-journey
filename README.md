@@ -55,7 +55,27 @@ Become Backend Developer and Cybersecurity Professional.
 
 <img width="477" height="318" alt="image" src="https://github.com/user-attachments/assets/4fc7d425-f740-49ee-81c0-a16c3a117b56" />
 
+# Python Foundations - Day 2
 
+## Topics Covered
+- If-Else
+- Logical Operators
+- Conditionals
+
+## Programs Included
+- Positive/Negative Checker
+- Even/Odd Checker
+- Largest of 3 Numbers
+- Leap Year Checker
+- Grade Calculator
+- Login System
+- ATM Simulation
+- Menu-Based Calculator
+
+## What I Learned
+Understanding conditionals and logical operators in Python.
+
+## Screenshot
 
 
 
