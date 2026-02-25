@@ -59,7 +59,87 @@ Understanding conditionals and logical operators in Python.
 
 ## Screenshot
 
+### Day 3 – Loops
+- For loops
+- While loops
+- Nested loops
+- Pattern Problems
+- Number Guessing Game
 
+---
+
+### Day 4 – Functions
+- Defining functions
+- Parameters & Return values
+- Scope basics
+- Code modularization
+
+---
+
+### Day 5 – File Handling
+- Reading files
+- Writing files
+- Working with logs
+
+---
+
+### Day 6 – Error Handling
+- Try-Except
+- Handling invalid input
+- Preventing crashes
+
+---
+
+### Day 7 – Data Structures
+- Lists
+- Tuples
+- Sets
+- Dictionaries
+
+---
+
+### Day 8 – OOP Basics
+- Classes
+- Objects
+- Constructors
+- Methods
+
+---
+
+### Day 9 – Advanced OOP
+- Inheritance
+- Encapsulation
+- Method overriding
+
+---
+
+### Day 10 – Mini Projects
+- CLI tools
+- Logic-based mini applications
+
+---
+
+### Day 11 – Regex (Cyber Focus)
+- `re` module
+- Pattern Searching
+- Extracting IP addresses
+- Extracting Emails
+- Extracting Port Numbers
+
+---
+
+## Goal
+
+Build strong backend fundamentals and transition into:
+- API development
+- Database integration
+- Secure coding practices
+- Log analysis & cybersecurity tooling
+
+---
+
+This repository is updated consistently as part of my 2026 backend mastery plan.
+One Impo
 
 
 
