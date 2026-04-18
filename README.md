@@ -13,7 +13,7 @@ Topics covered:
 Goal:
 Become Backend Developer and Cybersecurity Professional.
 
-# Python Foundations - Day 1
+# Python Foundations - Day 2
 
 ## What I Learned
 - Variables
@@ -21,6 +21,14 @@ Become Backend Developer and Cybersecurity Professional.
 - Input and output
 - Basic arithmetic
 - Type conversion
+- If-Else
+- Logical Operators
+- Conditionals
+- - For loops
+- While loops
+- Nested loops
+- Pattern Problems
+- Number Guessing Game
 
 ## Programs Created
 1. Add two numbers
@@ -33,42 +41,23 @@ Become Backend Developer and Cybersecurity Professional.
 8. String length
 9. Type checking
 10. String to integer conversion
-
-## Screenshot
-
-
-# Python Foundations - Day 2
-
-## Topics Covered
-- If-Else
-- Logical Operators
-- Conditionals
-
-## Programs Included
-- Positive/Negative Checker
-- Even/Odd Checker
-- Largest of 3 Numbers
-- Leap Year Checker
-- Grade Calculator
-- Login System
-- ATM Simulation
-- Menu-Based Calculator
+11. Positive/Negative Checker
+12. Even/Odd Checker
+13. Largest of 3 Numbers
+14. Leap Year Checker
+15. Grade Calculator
+16. Login System
+17. ATM Simulation
+18. Menu-Based Calculator
 
 ## What I Learned
 Understanding conditionals and logical operators in Python.
 
 ## Screenshot
 
-### Day 3 – Loops
-- For loops
-- While loops
-- Nested loops
-- Pattern Problems
-- Number Guessing Game
-
 ---
 
-### Day 4 – Functions
+### Day 3 – Functions
 - Defining functions
 - Parameters & Return values
 - Scope basics
