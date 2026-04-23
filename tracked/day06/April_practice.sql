@@ -59,8 +59,8 @@
 -- RIGHT JOIN courses on students.course = courses.name;
 -- select * from students
 -- LEFT JOIN courses on students.course = courses.name;
--- select * from students 
--- group by students.id;
+select * from students 
+group by students.id;
 
 
 
