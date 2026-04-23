@@ -1,5 +1,5 @@
 -- CREATE DATABASE student_db; 
--- USE student_db;
+-- USE student_db;course
 -- CREATE TABLE students (
 --     id INT AUTO_INCREMENT PRIMARY KEY,
 --     name VARCHAR(50),
@@ -39,11 +39,29 @@
 -- select * from students where course = 'CS';
 -- select * from students ORDER BY name;
 -- select * from students ORDER BY age ASC LIMIT 3;
- create table course(
- id SERIAL PRIMARY KEY,
- course_name VARCHAR(50)
- );
- 
+-- DROP TABLE IF EXISTS courses;
+-- create table courses(
+--  id SERIAL PRIMARY KEY,
+--  name VARCHAR(50)
+--  );
+-- insert into courses (name)
+-- values 
+-- ('CS'),
+-- ('Cyber_security'),
+-- ('IT'),
+-- ('ECE'),
+-- ('DS');
+-- SELECT *
+-- FROM students
+-- JOIN courses
+-- ON students.course = courses.name;
+-- select * from students 
+-- RIGHT JOIN courses on students.course = courses.name;
+-- select * from students
+-- LEFT JOIN courses on students.course = courses.name;
+-- select * from students 
+-- group by students.id;
+
 
 
 
