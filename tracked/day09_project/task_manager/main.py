@@ -1,43 +1,79 @@
+import json
 tasks = []
 
 # Load tasks from file
-try:
-    with open("tasks.txt", "r") as file:
-        for line in file:
-            tasks.append(line.strip())
-except FileNotFoundError:
-    pass
+def load_tasks():
+    global tasks
+    try:
+        with open("tasks.json", "r") as file:
+            tasks = json.load(file)
+    except:
+        tasks = []
+
+
+def save_tasks():
+    with open("tasks.json", "w") as file:
+        json.dump(tasks, file)
+
+
+def add_task():
+    task = input("Enter task: ").strip()
+    if task == "":
+        print("Task cannot be empty")
+        return
+    tasks.append(task)
+    save_tasks()
+    print("Task added")
+
+
+def view_tasks():
+    if not tasks:
+        print("No tasks available")
+        return
+
+    print("\nTasks:")
+    for i, task in enumerate(tasks, start=1):
+        print(f"{i}. {task}")
+
+
+def delete_task():
+    view_tasks()
+
+    try:
+        num = int(input("Enter task number to delete: "))
+        if 1 <= num <= len(tasks):
+            tasks.pop(num - 1)
+            save_tasks()
+            print("Task deleted")
+        else:
+            print("Invalid number")
+    except:
+        print("Enter valid number")
+
+
+# MAIN PROGRAM
+load_tasks()
 
 while True:
-    print("/n--- Task Manager ---")
-    print("1. Add Task")
-    print("2. View Tasks")
-    print("3. Delete Task")
+    print("\n--- Task Manager ---")
+    print("1. Add")
+    print("2. View")
+    print("3. Delete")
     print("4. Exit")
 
     choice = input("Enter choice: ")
 
     if choice == "1":
-        task = input("Enter task: ")
-        tasks.append(task)
+        add_task()
 
     elif choice == "2":
-        print(tasks)
+        view_tasks()
 
     elif choice == "3":
-        task = input("Enter task to delete: ")
-        
-        if task in tasks:
-            tasks.remove(task)
-        else:
-            print("Task not found")
+        delete_task()
 
     elif choice == "4":
-        with open("tasks.txt", "w") as file:
-            for task in tasks:
-                file.write(task + "\n")
-
-        print("Tasks saved. Exiting...")
+        print("Exiting...")
         break
 
     else:
