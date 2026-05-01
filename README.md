@@ -117,6 +117,25 @@ Understanding conditionals and logical operators in Python.
 
 ---
 
+# Django CRUD Blog App
+
+## Features
+- Create posts
+- View posts
+- Edit posts
+- Delete posts
+- User authentication (login/logout)
+- Admin panel
+
+## Tech
+- Python
+- Django
+- SQLite
+
+## Run
+pip install django
+python manage.py runserver
+
 ## Goal
 
 Build strong backend fundamentals and transition into:
