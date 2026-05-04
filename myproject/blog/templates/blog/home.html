@@ -1,20 +1,22 @@
-<h1>My Blog</h1>
+<h1 style="margin-bottom:20px;">My Blog</h1>
 
-<form method="POST" action="/add/">
-    {% csrf_token %}
-    <input type="text" name="title" placeholder="Enter title"><br><br>
-    <textarea name="content" placeholder="Enter content"></textarea><br><br>
-    <button type="submit">Add Post</button>
-</form>
+<div style="margin-bottom:20px;">
+    <form method="POST" action="/add/">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="Enter title"><br><br>
+        <textarea name="content" placeholder="Enter content"></textarea><br><br>
+        <button type="submit">Add Post</button>
+    </form>
 
-<hr>
+    <hr>
 
-{% for post in posts %}
+    {% for post in posts %}
     <h2>{{ post.title }}</h2>
     <p>{{ post.content }}</p>
 
-    <a href="/edit/{{ post.id }}/">Edit</a> |
-    <a href="/delete/{{ post.id }}/">Delete</a>
+    <a href="/edit/{{ post.id }}/"><button>Edit</button></a> |
+    <a href="/delete/{{ post.id }}/"><button>Delete</button></a>
+
 
     <hr>
-{% endfor %}
+    {% endfor %}

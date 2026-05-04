@@ -5,6 +5,7 @@ from django.contrib.auth import authenticate, login, logout
 
 @login_required
 def home(request):
+    # Fetch all posts
     posts = Post.objects.all()
     return render(request, "blog/home.html", {"posts": posts})
 
