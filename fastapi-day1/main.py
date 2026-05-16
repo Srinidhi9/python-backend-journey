@@ -2,10 +2,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-students = [
-    {"id": 1, "name": "Srinidhi"},
-    {"id": 2, "name": "Ravi"}
-]
+students = []
 
 @app.get("/")
 def home():
@@ -15,10 +12,17 @@ def home():
 def get_students():
     return students
 
-@app.get("/students/{student_id}")
-def get_student(student_id: int):
-    for student in students:
-        if student["id"] == student_id:
-            return student
+@app.post("/students")
+def add_student(student: dict):
+    students.append(student)
+    return {"message": "Student added"}
 
-    return {"error": "Student not found"}
+@app.put("/students/{index}")
+def update_student(index: int, student: dict):
+    students[index] = student
+    return {"message": "Student updated"}
+
+@app.delete("/students/{index}")
+def delete_student(index: int):
+    students.pop(index)
+    return {"message": "Student deleted"}
