@@ -3,6 +3,12 @@ from .models import Post
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from .models import Student
+from .serializers import StudentSerializer
+
 @login_required
 def home(request):
     # Fetch all posts
@@ -56,3 +62,8 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect("/login/")
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def test_api(request):
+    return Response({"message": "You are authenticated"})
