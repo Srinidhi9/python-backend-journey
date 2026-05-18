@@ -50,3 +50,7 @@ def login(user: Login, db: Session = Depends(get_db)):
     token = create_access_token({"sub": db_user.username})
 
     return {"access_token": token}
+
+@app.get("/")
+def home():
+    return {"message": "FastAPI Job Tracker API is running"}
