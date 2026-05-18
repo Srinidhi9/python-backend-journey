@@ -1,6 +1,9 @@
+from fastapi import APIRouter
 from passlib.context import CryptContext
 from jose import jwt
 from datetime import datetime, timedelta
+
+router = APIRouter()
 
 SECRET_KEY = "mysecretkey"
 
@@ -20,3 +23,11 @@ def create_access_token(data: dict):
     to_encode.update({"exp": expire})
 
     return jwt.encode(to_encode, SECRET_KEY, algorithm="HS256")
+
+@router.post("/signup")
+def signup():
+    return {"message": "Signup route working"}
+
+@router.post("/login")
+def login():
+    return {"message": "Login route working"}
