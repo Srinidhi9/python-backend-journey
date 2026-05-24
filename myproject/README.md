@@ -49,4 +49,4 @@ Tech stack
 - SQLite
 
 Run instructions
-python manage.py runserver
+- python manage.py runserver
