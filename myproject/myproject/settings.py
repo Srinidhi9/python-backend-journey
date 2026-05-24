@@ -140,3 +140,9 @@ LOGIN_REDIRECT_URL = '/api/students/'
 #         'django_filters.rest_framework.DjangoFilterBackend'
 #     ]
 # }
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+}
