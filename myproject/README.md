@@ -34,3 +34,19 @@ DELETE /students/id/
 ![alt text](image-2.png)
 ![alt text](image-3.png)
 ![alt text](image-4.png)
+
+# Django Blog CRUD App
+
+Features
+- Create posts
+- Edit posts
+- Delete posts
+- Admin panel
+
+Tech stack
+- Django
+- Python
+- SQLite
+
+Run instructions
+python manage.py runserver
