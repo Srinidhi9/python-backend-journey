@@ -1,15 +1,13 @@
 from django.urls import path
 from . import views
 
-
 urlpatterns = [
     path('', views.home),
+
     path('add/', views.add_post),
     path('delete/<int:id>/', views.delete_post),
     path('edit/<int:id>/', views.edit_post),
-    path("login/", views.login_view, name="login"),
-    path("logout/", views.logout_view, name="logout"),
 
-
-    path('test/', views.test_api),
+    path('login/', views.login_view),
+    path('logout/', views.logout_view),
 ]
