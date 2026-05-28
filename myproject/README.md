@@ -1,52 +1,91 @@
-# Student Management REST API
+# Django Backend Journey
 
-A REST API built using Django REST Framework
-for managing students and courses.
+This repository contains multiple backend projects built while learning Django and Django REST Framework.
 
-## Features
-- CRUD operations
-- REST API endpoints
-- Django REST Framework
-- SQLite database
+## Projects
 
-## Tech Stack
-- Python
-- Django
-- Django REST Framework
-- SQLite
+### 1. Django Blog CRUD App
 
-## Installation
+A web-based CRUD application using Django templates.
 
-git clone <repo-link>
+#### Features
 
-pip install -r requirements.txt
+* Create posts
+* View posts
+* Edit posts
+* Delete posts
+* Admin panel integration
 
-python manage.py runserver
+#### Tech Used
 
-## API Endpoints
+* Python
+* Django
+* SQLite
+* HTML Templates
 
+---
+
+### 2. Student Management REST API
+
+A REST API built using Django REST Framework for managing students and courses.
+
+#### Features
+
+* CRUD API endpoints
+* Serializers
+* REST API support
+* SQLite database
+
+#### API Endpoints
+
+```text id="48g5fr"
 GET /students/
 POST /students/
 PUT /students/id/
 DELETE /students/id/
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
+```
 
-# Django Blog CRUD App
+#### Tech Used
 
-Features
-- Create posts
-- Edit posts
-- Delete posts
-- Admin panel
+* Python
+* Django
+* Django REST Framework
+* SQLite
 
-Tech stack
-- Django
-- Python
-- SQLite
+---
 
-Run instructions
-- python manage.py runserver
+## How to Run
+
+```bash id="efsq5s"
+python manage.py runserver
+```
+
+Open browser:
+
+```text id="5j7msw"
+http://127.0.0.1:8000
+```
+
+---
+
+## Future Improvements
+
+* Authentication system
+* Better frontend UI
+* Pagination
+* Search functionality
+* JWT Authentication
+## Screenshots
+
+### Blog Home Page
+
+![alt text](blog_home.png)
+
+### Edit Post Page
+
+![alt text](edit_post.png)
+
+### Admin Panel
+
+![alt text](admin_panel.png)
+
